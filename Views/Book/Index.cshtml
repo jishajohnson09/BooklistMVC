@@ -1,0 +1,27 @@
+﻿<br/>
+<div class="container row p-0 m-0">
+    <div class="col-6">
+
+        <h2 class="text-info">Book List</h2>
+    </div>
+    <div class="col-3">
+        <a asp-action="Upsert" asp-contoller="Books" class="btn btn-info text-white form-control">Add New Book</a>
+    </div>
+    <div class="col-12 border p-3">
+        <table class="table-striped table-bordered table" id="DT_Load" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+<script src="../js/BookList.js"></script>
+}
+   
